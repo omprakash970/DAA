@@ -6,7 +6,7 @@ public class factorial {
         return n * factorial_using_recursion(n-1);
     }
     public int factorialIterative(int n){
-        
+
         int result = 1;
         for(int i=2;i<=n;i++){
             result *= i;
@@ -17,7 +17,7 @@ public class factorial {
     public static void main(String[] args) {
         factorial fact = new factorial();
         int number = 5; 
-        int result = fact.computeFactorial(number);
+        int result = fact.factorial_using_recursion(number);
         System.out.println("Factorial of " + number + " is: " + result);
     }
     
